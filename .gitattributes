@@ -1,0 +1,2 @@
+stages/*.sff filter=lfs diff=lfs merge=lfs -text
+chars/*/*.sff filter=lfs diff=lfs merge=lfs -text
