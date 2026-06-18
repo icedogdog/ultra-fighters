@@ -1471,13 +1471,13 @@ value = 5,0
 
 
 ;Air Fireball_X
-;[Statedef 1600]
-;type    = A
-;movetype= A
-;physics = A
-;poweradd= 100
-;ctrl = 0
-;anim = 1400
+[Statedef 1600]
+type    = A
+movetype= A
+physics = A
+poweradd= 100
+ctrl = 0
+anim = 1400
 
 [State 1000, 1]
 type = PlaySnd
@@ -2091,46 +2091,46 @@ air.velocity = -1.3,-3
 fall = 1
 fall.recover = 0
 
-;[Statedef 1210]
-;type = A
-;movetype = A
-;anim = 1201
-;physics = A
-;ctrl = 0
-;velset = 4,-4
-;juggle = 10
+[Statedef 1210]
+type = A
+movetype = A
+anim = 1201
+physics = A
+ctrl = 0
+velset = 4,-4
+juggle = 10
 
-;[State 1210, 1]
-;type = ChangeState
-;trigger1 = Vel Y >= 0
-;value = 1220
+[State 1210, 1]
+type = ChangeState
+trigger1 = Vel Y >= 0
+value = 1220
 
-;[State 1210, 2]
-;type = VelAdd
-;trigger1 = Time != 1
-;x = -.2
+[State 1210, 2]
+type = VelAdd
+trigger1 = Time != 1
+x = -.2
 
-;[State 1210, 1]
-;type = HitDef
-;trigger1 = AnimElem = 1
-;attr = S, SA
-;damage    = 90
-;animtype  = Light
-;getpower  = 10
-;givepower = 8
-;hitflag = MA
-;guardflag = L
-;pausetime = 10,12
-;sparkxy = -2,-50
-;hitsound   = S10,2
-;guardsound = 6,0
-;ground.type = Low
-;ground.slidetime = 4
-;ground.hittime  = 15
-;ground.velocity = -3, -9
-;air.velocity = -3,-9
-;fall = 1
-;fall.recover = 0
+[State 1210, 1]
+type = HitDef
+trigger1 = AnimElem = 1
+attr = S, SA
+damage    = 90
+animtype  = Light
+getpower  = 10
+givepower = 8
+hitflag = MA
+guardflag = L
+pausetime = 10,12
+sparkxy = -2,-50
+hitsound   = S10,2
+guardsound = 6,0
+ground.type = Low
+ground.slidetime = 4
+ground.hittime  = 15
+ground.velocity = -3, -9
+air.velocity = -3,-9
+fall = 1
+fall.recover = 0
 
 ;Dragon Punch_Y
 [Statedef 1201]
@@ -2170,46 +2170,46 @@ ground.hittime  = 15
 ground.velocity = -2
 air.velocity = -1.3,-3
 
-;[Statedef 1211]
-;type = A
-;movetype = A
-;anim = 1201
-;physics = A
-;ctrl = 0
-;velset = 5,-6.5
-;juggle = 10
+[Statedef 1211]
+type = A
+movetype = A
+anim = 1201
+physics = A
+ctrl = 0
+velset = 5,-6.5
+juggle = 10
 
-;[State 1211, 1]
-;type = ChangeState
-;trigger1 = Vel Y >= 0
-;value = 1220
+[State 1211, 1]
+type = ChangeState
+trigger1 = Vel Y >= 0
+value = 1220
 
-;[State 1211, 2]
-;type = VelAdd
-;trigger1 = Time != 1
-;x = -.2
+[State 1211, 2]
+type = VelAdd
+trigger1 = Time != 1
+x = -.2
 
-;[State 1211, 1]
-;type = HitDef
-;trigger1 = AnimElem = 1
-;attr = A, SA
-;damage    = 60, 4
-;animtype  = Light
-;getpower  = 10
-;givepower = 8
-;hitflag = MA
-;guardflag = L
-;pausetime = 10,12
-;sparkxy = -2,-50
-;hitsound   = S10,2
-;guardsound = 6,0
-;ground.type = Low
-;ground.slidetime = 4
-;ground.hittime  = 15
-;ground.velocity = -3, -9
-;air.velocity = -3,-9
-;fall = 1
-;fall.recover = 0
+[State 1211, 1]
+type = HitDef
+trigger1 = AnimElem = 1
+attr = A, SA
+damage    = 60, 4
+animtype  = Light
+getpower  = 10
+givepower = 8
+hitflag = MA
+guardflag = L
+pausetime = 10,12
+sparkxy = -2,-50
+hitsound   = S10,2
+guardsound = 6,0
+ground.type = Low
+ground.slidetime = 4
+ground.hittime  = 15
+ground.velocity = -3, -9
+air.velocity = -3,-9
+fall = 1
+fall.recover = 0
 
 ;Dragon Punch_Z
 [Statedef 1202]
