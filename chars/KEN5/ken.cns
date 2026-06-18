@@ -1471,13 +1471,13 @@ value = 5,0
 
 
 ;Air Fireball_X
-;[Statedef 1600]
-;type    = A
-;movetype= A
-;physics = A
-;poweradd= 100
-;ctrl = 0
-;anim = 1400
+[Statedef 1600]
+type    = A
+movetype= A
+physics = A
+poweradd= 100
+ctrl = 0
+anim = 1400
 
 [State 1000, 1]
 type = PlaySnd
