@@ -5,7 +5,7 @@ displayname = "JohCaw" ;Name of character to display
 versiondate = 07,17,2000    ;Version date of character
 mugenversion = 06,27,2000   ;Version of M.U.G.E.N character works on
 author = "Charlzn64, Arktis"         ;Character author name
-pal.defaults = 1,2,3,4      ;Default palettes in order of preference
+pal.defaults = 1;,2,3,4    ;Default palettes in order of preference
 
 
 [Files]
@@ -16,18 +16,18 @@ stcommon=common1.cns
 sprite=ken.sff
 anim=ken.air
 sound=ken.snd
-pal1=ken1.act
-pal2=ken2.act
-pal3=ken3.act
-pal4=ken4.act
-pal5=ken5.act
-pal6=ken6.act
-pal7=ken7.act
-pal8=ken8.act
-pal9=ken9.act
-pal10=ken10.act
-pal11=ken11.act
-pal12=ken12.act
+pal1=palette.act
+;pal2=ken2.act
+;pal3=ken3.act
+;pal4=ken4.act
+;pal5=ken5.act
+;pal6=ken6.act
+;pal7=ken7.act
+;pal8=ken8.act
+;pal9=ken9.act
+;pal10=ken10.act
+;pal11=ken11.act
+;pal12=ken12.act
 
 [Arcade]
 intro.storyboard = D:\MUGEN\extrastuff\add-ons\Intros&Endings\sfa2intro/introsfa2.def
