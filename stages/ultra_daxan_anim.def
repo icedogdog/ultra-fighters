@@ -71,12 +71,12 @@ cutlow = 25
 ;Player 1 starting coordinates.
 ;p1startx is typically -70 and p2startx is 70.
 ;p1starty should be 0.
-p1startx = -70          ;Starting x coordinates
+p1startx = -300          ;Starting x coordinates
 p1starty = 0            ;Starting y coordinates
 p1facing = 1            ;Direction player faces: 1=right, -1=left
 
 ;--- Player 2 ---
-p2startx = 70
+p2startx = 300
 p2starty = 0
 p2facing = -1
 
@@ -98,7 +98,7 @@ screenright = 15   ;Right edge
 ;top of the screen.
 ;Adjust this value to move the ground level up/down in the screen.
 ;***
-zoffset = 200
+zoffset = 660
 
 ;Leave this at 1. It makes the players face each other
 autoturn = 1
@@ -108,7 +108,7 @@ autoturn = 1
 resetBG = 1
 
 ;Width and height of the local coordinate space of the stage.
-localcoord = 1920, 1080
+localcoord = 1280, 720
 
 ;Horizontal and vertical scaling factor for drawing.
 xscale = 1
@@ -148,7 +148,7 @@ fade.range = -400,-100
 [Reflection]
 ;Intensity of reflection (from 0 to 256). Set to 0 to have no
 ;reflection. Defaults to 0.
-intensity = 128
+intensity = 64
 
 ;--------------------------------------------------------
 [Music]
@@ -190,6 +190,7 @@ bgmvolume = 100
 ; yscaledelta = ?  Change in y-scale per unit (float, in percent)  (def: 0)
 ;-------------------------------------
 
+
 ;-------------------------------------
 ; Main background definition
 [BGdef]
@@ -206,20 +207,21 @@ debugbg = 0
 type = Anim
 actionno = 0
 tile = 0, -1
+start = 8, -244
 
 ; stgbg
 [Begin Action 0]
-0,0, 0,0, 3
-0,1, 0,0, 3
-0,2, 0,0, 3
-0,3, 0,0, 3
-0,4, 0,0, 3
-0,5, 0,0, 3
-0,6, 0,0, 3
-0,7, 0,0, 3
-0,8, 0,0, 3
-0,9, 0,0, 3
-0,10, 0,0, 3
-0,11, 0,0, 3
-0,12, 0,0, 3
-0,13, 0,0, 3
+0,0, 0,0, 4
+0,1, 0,0, 4
+0,2, 0,0, 4
+0,3, 0,0, 4
+0,4, 0,0, 4
+0,5, 0,0, 4
+0,6, 0,0, 4
+0,7, 0,0, 4
+0,8, 0,0, 4
+0,9, 0,0, 4
+0,10, 0,0, 4
+0,11, 0,0, 4
+0,12, 0,0, 4
+0,13, 0,0, 4
