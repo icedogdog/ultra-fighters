@@ -78,9 +78,7 @@ MasterSean
  ;For example, you can insert "stages/mybg.def".
 
 ; Static stages
-stages/club_orion.def
 stages/poes_nightclub.def
-stages/stage0.def
 stages/tailbass.def
 stages/ultra_club_b.def
 
