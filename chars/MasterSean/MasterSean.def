@@ -4,7 +4,7 @@ displayname="LAMB//CHOPS"
 versiondate=07/09/08
 mugenversion=14,04,2002
 author="LaQuak, Arktis"
-pal.defaults=1,2,3,4
+pal.defaults=1;,2,3,4
 [Files]
 sprite=MasterSean.sff
 sound=MasterSean.snd
@@ -13,7 +13,7 @@ cmd=MasterSean.cmd
 cns=MasterSean.cns
 st=MasterSean.cns
 stcommon=common1.cns
-pal1=MasterSean.act
+pal1=LambPalette.act
 st1=common.cns
 [Arcade]
 intro.storyboard=
