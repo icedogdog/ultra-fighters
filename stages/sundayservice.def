@@ -1,0 +1,302 @@
+
+; Definition of stage
+; *** denotes values you should change/check for each stage.
+; The term "background" is used to mean both backgrounds and foregrounds.
+
+;--------------------------------------------------------
+[Info]
+name         = "Sunday Service"	; Name of the stage.
+displayname  = "Sunday Service"	; Name to display
+versiondate  = 1.0		; Version date of stage (MM,DD,YYYY or X.XX)
+mugenversion = 1.0 		; Version of MUGENext stage works on (X.XX)
+author       = "Johari"	; Stage author name
+
+;--------------------------------------------------------
+[Camera]
+;Camera starting position: Usually 0 for both
+startx = 0
+starty = 0
+
+;Left and right bound of camera
+;You may want to fiddle a bit with these values to make sure the
+;background doesn't move too far or too little
+;***
+boundleft = -150
+boundright = 150
+
+;High and low bound of camera
+;High is a negative number. Make is more negative if you want to
+;camera to be able to move higher.
+;Low should usually be 0.
+;If omitted, defaults to -25 and 0 respectively
+;***
+boundhigh = -22
+boundlow = 0
+
+;This is how much the camera will move vertically towards the
+;highest player. Valid values are from 0 to 1. A value of 0 will mean
+;the camera does not move up at all. A value of 1 will makes the camera
+;follow the highest player.
+;Typically .2 for normal-sized backgrounds. You may need to pull this
+;value up for taller backgrounds.
+verticalfollow = .2
+
+;Minimum vertical distance the highest player has to be from the floor,
+;before the camera starts to move up to follow him. For extremely
+;tall stages, a floor tension of about 20-30 coupled with a
+;vertical-follow of .8 allows the camera to follow the action.
+floortension = 0
+
+;Horizontal distance player is from edge before camera starts to move
+;left or right. Typically 50 or 60.
+tension = 60
+
+;Number of pixels beyond the top and bottom of the screen that may
+;be drawn.  Overdraw specifies the how much can be seen during an
+;EnvShake.  Overdraw pixels will also be used when the screen aspect
+;is taller than the stage aspect.
+overdrawhigh = 0
+overdrawlow = 0
+
+;Number of pixels into the top and bottom of the screen that may be
+;cut from drawing when the screen aspect is shorter than the stage
+;aspect.  These parameters suggest a guideline, and the actual
+;number of pixels cut depends on the difference in aspect.
+cuthigh = 35
+cutlow = 25
+
+;--------------------------------------------------------
+[PlayerInfo]
+;--- Player 1 ---
+;Player 1 starting coordinates.
+;p1startx is typically -70 and p2startx is 70.
+;p1starty should be 0.
+p1startx = -300          ;Starting x coordinates
+p1starty = 0            ;Starting y coordinates
+p1facing = 1            ;Direction player faces: 1=right, -1=left
+
+;--- Player 2 ---
+p2startx = 300
+p2starty = 0
+p2facing = -1
+
+;--- Common ---
+;Don't change these values.
+leftbound  = -1000 ;Left bound (x-movement)
+rightbound =  1000 ;Right bound
+
+;--------------------------------------------------------
+[Bound]
+;Distance from left/right edge of screen that player can move to
+;Typically 15
+screenleft = 15    ;Dist from left of screen that player can move to
+screenright = 15   ;Right edge
+
+;--------------------------------------------------------
+[StageInfo]
+;"Ground" level where players stand at, measured in pixels from the
+;top of the screen.
+;Adjust this value to move the ground level up/down in the screen.
+;***
+zoffset = 660
+
+;Leave this at 1. It makes the players face each other
+autoturn = 1
+
+;Set the following to 1 to have the background be reset between
+;rounds.
+resetBG = 1
+
+;Width and height of the local coordinate space of the stage.
+localcoord = 1280, 720
+
+;Horizontal and vertical scaling factor for drawing.
+xscale = 1
+yscale = 1
+
+;--------------------------------------------------------
+[Shadow]
+;This controls the darkness of the shadow. Valid values range
+;from 0 (lightest) to 256 (darkest). Defaults to 128 if omitted.
+intensity = 32
+
+;This is the shadow color given in r,g,b. Valid values for each
+;range from 0 (lightest) to 255 (darkest).
+;Defaults to 0,0,0 if omitted.
+;intensity and color's effects add up to give the final shadow
+;result.
+color = 0,0,0
+
+;This is the scale factor of the shadow. Use a big scale factor
+;to make the shadow longer. You can use a NEGATIVE scale factor
+;to make the shadow fall INTO the screen.
+;Defaults to 0.4 if omitted.
+yscale = -.1
+
+;This parameter lets you set the range over which the shadow is
+;visible. The first value is the high level, and the second is
+;the middle level. Both represent y-coordinates of the player.
+;A shadow is invisible if the player is above the high level,
+;and fully visible if below the middle level. The shadow is
+;faded in between the two levels. This gives an effect of the
+;shadow fading away as the player gets farther away from the
+;ground. If omitted, defaults to no level effects (shadow is
+;always fully visible).
+fade.range = -400,-100
+
+;--------------------------------------------------------
+[Reflection]
+;Intensity of reflection (from 0 to 256). Set to 0 to have no
+;reflection. Defaults to 0.
+intensity = 196
+
+;--------------------------------------------------------
+[Music]
+;Put a filename for a MOD, MP3 or MIDI here, or just leave it
+;blank if you don't want music. If an invalid filename is
+;given, then no music will play. To play CD audio, put
+;the track number followed by ".da". Using a track number of
+;0 will play a random audio track. For example, to play
+;track 3 from a music CD, use:
+;  bgmusic = 3.da
+;bgmusic = sound/sound.<fmt>
+
+;bgmloopstart = <sample number>
+;bgmloopend = <sample number>
+
+;Adjust the volume. 100 is for 100%.
+bgmvolume = 100
+
+;--------------------------------------------------------
+; Background definition
+; ***
+;-------------------------------------
+; [BG x]
+; type = ?       "Normal"/"Parallax"  (def: "normal")
+; spriteno = ?, ? Sprite group and number: groupno, imgno  (req'd)
+; start = ?, ?   Starting location (integer)  (def: 0, 0)
+; delta = ?, ?   Change in location per camera unit moved (float)  (def: 1,1)
+; trans = ?      Transparency settings: "none"/"add"/"add1"/"sub"/"addalpha" (def: "none")
+; alpha = ?, ?   (only for trans=addalpha) Source,dest alpha (def: 256,0)
+; mask = ?       Masking (int): 0 - off, 1 - on  (def: 0)
+; velocity = ?, ? Velocity: x, y (float): speed background moves (def: 0, 0)
+; tile = ?, ?    Tiling: xtile, ytile (int): 0 - off, 1 - infinite,
+;                        >1 - tile that number of times  (def: 0, 0) - only for Normal BG
+; tilespacing = ?, ? Tiling: x, y (int) : space between tiles (def: 0, 0)
+;  Parallax-only:
+; xscale = ?, ?    Top xscale, bottom xscale (float)
+; width = ?, ?     Top width, bottom width (int)  (use either this or above, but not both)
+; yscalestart = ?  Starting y-scale (float, in percent)  (def: 100)
+; yscaledelta = ?  Change in y-scale per unit (float, in percent)  (def: 0)
+;-------------------------------------
+
+;-------------------------------------
+; Main background definition
+[BGdef]
+;Filename of sprite data
+spr = sundayservice.sff
+
+;Set to 1 if you want to clear the screen to magenta before
+;drawing layer 0 (the default background). Good for spotting \"holes\"
+;in your background.
+;Remember to turn this off when you are done debugging the background,
+;because it slows down performance.
+debugbg = 0
+[BG sundayservice]
+type = Anim
+actionno = 0
+start = 8, -140
+
+; sundayservicestage
+[Begin Action 0]
+0,0, 0,0, 3
+0,1, 0,0, 3
+0,2, 0,0, 3
+0,3, 0,0, 3
+0,4, 0,0, 3
+0,5, 0,0, 3
+0,6, 0,0, 3
+0,7, 0,0, 3
+0,8, 0,0, 3
+0,9, 0,0, 3
+0,10, 0,0, 3
+0,11, 0,0, 3
+0,12, 0,0, 3
+0,13, 0,0, 3
+0,14, 0,0, 3
+0,15, 0,0, 3
+0,16, 0,0, 3
+0,17, 0,0, 3
+0,18, 0,0, 3
+0,19, 0,0, 3
+0,20, 0,0, 3
+0,21, 0,0, 3
+0,22, 0,0, 3
+0,23, 0,0, 3
+0,24, 0,0, 3
+0,25, 0,0, 3
+0,26, 0,0, 3
+0,27, 0,0, 3
+0,28, 0,0, 3
+0,29, 0,0, 3
+0,30, 0,0, 3
+0,31, 0,0, 3
+0,32, 0,0, 3
+0,33, 0,0, 3
+0,34, 0,0, 3
+0,35, 0,0, 3
+0,36, 0,0, 3
+0,37, 0,0, 3
+0,38, 0,0, 3
+0,39, 0,0, 3
+0,40, 0,0, 3
+0,41, 0,0, 3
+0,42, 0,0, 3
+0,43, 0,0, 3
+0,44, 0,0, 3
+0,45, 0,0, 3
+0,46, 0,0, 3
+0,47, 0,0, 3
+0,48, 0,0, 3
+0,49, 0,0, 3
+0,50, 0,0, 3
+0,51, 0,0, 3
+0,52, 0,0, 3
+0,53, 0,0, 3
+0,54, 0,0, 3
+0,55, 0,0, 3
+0,56, 0,0, 3
+0,57, 0,0, 3
+0,58, 0,0, 3
+0,59, 0,0, 3
+0,60, 0,0, 3
+0,61, 0,0, 3
+0,62, 0,0, 3
+0,63, 0,0, 3
+0,64, 0,0, 3
+0,65, 0,0, 3
+0,66, 0,0, 3
+0,67, 0,0, 3
+0,68, 0,0, 3
+0,69, 0,0, 3
+0,70, 0,0, 3
+0,71, 0,0, 3
+0,72, 0,0, 3
+0,73, 0,0, 3
+0,74, 0,0, 3
+0,75, 0,0, 3
+0,76, 0,0, 3
+0,77, 0,0, 3
+0,78, 0,0, 3
+0,79, 0,0, 3
+0,80, 0,0, 3
+0,81, 0,0, 3
+0,82, 0,0, 3
+0,83, 0,0, 3
+0,84, 0,0, 3
+0,85, 0,0, 3
+0,86, 0,0, 3
+0,87, 0,0, 3
+0,88, 0,0, 3
+0,89, 0,0, 3
+0,90, 0,0, 3

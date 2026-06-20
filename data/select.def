@@ -83,16 +83,15 @@ stages/ultra_lobby_a.def
 stages/bird_meet.def
 stages/club_orion.def
 stages/poes_nightclub.def
-stages/s4.def
 stages/stage0.def
 stages/tailbass.def
-stages/ultra_club.def
 stages/ultra_club_b.def
 
 ; Animated Stages
-stages/resync.def
-stages/fireworks.def
 stages/daxan.def
+stages/fireworks.def
+stages/resync.def
+stages/sundayservice.def
 
 ;---------------------------------------------------------------------
 [Options]
