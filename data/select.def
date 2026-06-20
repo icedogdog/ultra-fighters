@@ -79,7 +79,6 @@ MasterSean
 
 ; Static stages
 stages/poes_nightclub.def
-stages/tailbass.def
 stages/ultra_club_b.def
 
 ; Animated Stages
@@ -91,6 +90,7 @@ stages/lobbyone.def
 stages/lobbytwo.def
 stages/resync.def
 stages/sundayservice.def
+stages/tailbass.def
 
 ;---------------------------------------------------------------------
 [Options]
