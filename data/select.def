@@ -79,7 +79,6 @@ MasterSean
 
 ; Static stages
 stages/ultraplex_hub.def
-stages/ultra_lobby_a.def
 stages/bird_meet.def
 stages/club_orion.def
 stages/poes_nightclub.def
@@ -90,6 +89,7 @@ stages/ultra_club_b.def
 ; Animated Stages
 stages/daxan.def
 stages/fireworks.def
+stages/lobbyone.def
 stages/resync.def
 stages/sundayservice.def
 
