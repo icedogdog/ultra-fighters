@@ -5,8 +5,8 @@
 
 ;--------------------------------------------------------
 [Info]
-name         = "TAILBASS"	; Name of the stage.
-displayname  = "TAILBASS"	; Name to display
+name         = "Bird Meetup"	; Name of the stage.
+displayname  = "Bird Meetup"	; Name to display
 versiondate  = 1.0		; Version date of stage (MM,DD,YYYY or X.XX)
 mugenversion = 1.0 		; Version of MUGENext stage works on (X.XX)
 author       = "Johari"	; Stage author name
@@ -118,7 +118,7 @@ yscale = 1
 [Shadow]
 ;This controls the darkness of the shadow. Valid values range
 ;from 0 (lightest) to 256 (darkest). Defaults to 128 if omitted.
-intensity = 64
+intensity = 196
 
 ;This is the shadow color given in r,g,b. Valid values for each
 ;range from 0 (lightest) to 255 (darkest).
@@ -131,7 +131,7 @@ color = 0,0,0
 ;to make the shadow longer. You can use a NEGATIVE scale factor
 ;to make the shadow fall INTO the screen.
 ;Defaults to 0.4 if omitted.
-yscale = 0.4
+yscale = -.1
 
 ;This parameter lets you set the range over which the shadow is
 ;visible. The first value is the high level, and the second is
@@ -194,7 +194,7 @@ bgmvolume = 100
 ; Main background definition
 [BGdef]
 ;Filename of sprite data
-spr = tailbass.sff
+spr = birdmeet.sff
 
 ;Set to 1 if you want to clear the screen to magenta before
 ;drawing layer 0 (the default background). Good for spotting \"holes\"
@@ -202,12 +202,12 @@ spr = tailbass.sff
 ;Remember to turn this off when you are done debugging the background,
 ;because it slows down performance.
 debugbg = 0
-[BG tailbass]
+[BG birdmeet]
 type = Anim
 actionno = 0
-start = -18, -200
+start = 6, -194
 
-; tailbass
+; birdmeet
 [Begin Action 0]
 0,0, 0,0, 3
 0,1, 0,0, 3
@@ -258,72 +258,3 @@ start = -18, -200
 0,46, 0,0, 3
 0,47, 0,0, 3
 0,48, 0,0, 3
-0,49, 0,0, 3
-0,50, 0,0, 3
-0,51, 0,0, 3
-0,52, 0,0, 3
-0,53, 0,0, 3
-0,54, 0,0, 3
-0,55, 0,0, 3
-0,56, 0,0, 3
-0,57, 0,0, 3
-0,58, 0,0, 3
-0,59, 0,0, 3
-0,60, 0,0, 3
-0,61, 0,0, 3
-0,62, 0,0, 3
-0,63, 0,0, 3
-0,64, 0,0, 3
-0,65, 0,0, 3
-0,66, 0,0, 3
-0,67, 0,0, 3
-0,68, 0,0, 3
-0,69, 0,0, 3
-0,70, 0,0, 3
-0,71, 0,0, 3
-0,72, 0,0, 3
-0,73, 0,0, 3
-0,74, 0,0, 3
-0,75, 0,0, 3
-0,76, 0,0, 3
-0,77, 0,0, 3
-0,78, 0,0, 3
-0,79, 0,0, 3
-0,80, 0,0, 3
-0,81, 0,0, 3
-0,82, 0,0, 3
-0,83, 0,0, 3
-0,84, 0,0, 3
-0,85, 0,0, 3
-0,86, 0,0, 3
-0,87, 0,0, 3
-0,88, 0,0, 3
-0,89, 0,0, 3
-0,90, 0,0, 3
-0,91, 0,0, 3
-0,92, 0,0, 3
-0,93, 0,0, 3
-0,94, 0,0, 3
-0,95, 0,0, 3
-0,96, 0,0, 3
-0,97, 0,0, 3
-0,98, 0,0, 3
-0,99, 0,0, 3
-0,100, 0,0, 3
-0,101, 0,0, 3
-0,102, 0,0, 3
-0,103, 0,0, 3
-0,104, 0,0, 3
-0,105, 0,0, 3
-0,106, 0,0, 3
-0,107, 0,0, 3
-0,108, 0,0, 3
-0,109, 0,0, 3
-0,110, 0,0, 3
-0,111, 0,0, 3
-0,112, 0,0, 3
-0,113, 0,0, 3
-0,114, 0,0, 3
-0,115, 0,0, 3
-0,116, 0,0, 3
-0,117, 0,0, 3

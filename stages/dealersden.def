@@ -5,8 +5,8 @@
 
 ;--------------------------------------------------------
 [Info]
-name         = "TAILBASS"	; Name of the stage.
-displayname  = "TAILBASS"	; Name to display
+name         = "Dealers Den"	; Name of the stage.
+displayname  = "Dealers Den"	; Name to display
 versiondate  = 1.0		; Version date of stage (MM,DD,YYYY or X.XX)
 mugenversion = 1.0 		; Version of MUGENext stage works on (X.XX)
 author       = "Johari"	; Stage author name
@@ -131,7 +131,7 @@ color = 0,0,0
 ;to make the shadow longer. You can use a NEGATIVE scale factor
 ;to make the shadow fall INTO the screen.
 ;Defaults to 0.4 if omitted.
-yscale = 0.4
+yscale = -.1
 
 ;This parameter lets you set the range over which the shadow is
 ;visible. The first value is the high level, and the second is
@@ -148,7 +148,7 @@ fade.range = -400,-100
 [Reflection]
 ;Intensity of reflection (from 0 to 256). Set to 0 to have no
 ;reflection. Defaults to 0.
-intensity = 0
+intensity = 196
 
 ;--------------------------------------------------------
 [Music]
@@ -194,7 +194,7 @@ bgmvolume = 100
 ; Main background definition
 [BGdef]
 ;Filename of sprite data
-spr = tailbass.sff
+spr = dealersden.sff
 
 ;Set to 1 if you want to clear the screen to magenta before
 ;drawing layer 0 (the default background). Good for spotting \"holes\"
@@ -202,12 +202,12 @@ spr = tailbass.sff
 ;Remember to turn this off when you are done debugging the background,
 ;because it slows down performance.
 debugbg = 0
-[BG tailbass]
+[BG dealersden]
 type = Anim
 actionno = 0
-start = -18, -200
+start = -8, -308
 
-; tailbass
+; dealersden
 [Begin Action 0]
 0,0, 0,0, 3
 0,1, 0,0, 3
@@ -327,3 +327,19 @@ start = -18, -200
 0,115, 0,0, 3
 0,116, 0,0, 3
 0,117, 0,0, 3
+0,118, 0,0, 3
+0,119, 0,0, 3
+0,120, 0,0, 3
+0,121, 0,0, 3
+0,122, 0,0, 3
+0,123, 0,0, 3
+0,124, 0,0, 3
+0,125, 0,0, 3
+0,126, 0,0, 3
+0,127, 0,0, 3
+0,128, 0,0, 3
+0,129, 0,0, 3
+0,130, 0,0, 3
+0,131, 0,0, 3
+0,132, 0,0, 3
+0,133, 0,0, 3

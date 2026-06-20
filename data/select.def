@@ -78,20 +78,19 @@ MasterSean
  ;For example, you can insert "stages/mybg.def".
 
 ; Static stages
-stages/ultraplex_hub.def
-stages/ultra_lobby_a.def
-stages/bird_meet.def
-stages/club_orion.def
 stages/poes_nightclub.def
-stages/stage0.def
-stages/tailbass.def
 stages/ultra_club_b.def
 
 ; Animated Stages
+stages/birdmeet.def
 stages/daxan.def
+stages/dealersden.def
 stages/fireworks.def
+stages/lobbyone.def
+stages/lobbytwo.def
 stages/resync.def
 stages/sundayservice.def
+stages/tailbass.def
 
 ;---------------------------------------------------------------------
 [Options]
