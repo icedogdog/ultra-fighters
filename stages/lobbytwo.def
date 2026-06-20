@@ -5,8 +5,8 @@
 
 ;--------------------------------------------------------
 [Info]
-name         = "TAILBASS"	; Name of the stage.
-displayname  = "TAILBASS"	; Name to display
+name         = "Ultraplex Hub - B"	; Name of the stage.
+displayname  = "Ultraplex Hub - B"	; Name to display
 versiondate  = 1.0		; Version date of stage (MM,DD,YYYY or X.XX)
 mugenversion = 1.0 		; Version of MUGENext stage works on (X.XX)
 author       = "Johari"	; Stage author name
@@ -21,8 +21,8 @@ starty = 0
 ;You may want to fiddle a bit with these values to make sure the
 ;background doesn't move too far or too little
 ;***
-boundleft = -250
-boundright = 250
+boundleft = -200
+boundright = 200
 
 ;High and low bound of camera
 ;High is a negative number. Make is more negative if you want to
@@ -131,7 +131,7 @@ color = 0,0,0
 ;to make the shadow longer. You can use a NEGATIVE scale factor
 ;to make the shadow fall INTO the screen.
 ;Defaults to 0.4 if omitted.
-yscale = 0.4
+yscale = -.1
 
 ;This parameter lets you set the range over which the shadow is
 ;visible. The first value is the high level, and the second is
@@ -194,7 +194,7 @@ bgmvolume = 100
 ; Main background definition
 [BGdef]
 ;Filename of sprite data
-spr = tailbass.sff
+spr = lobbytwo.sff
 
 ;Set to 1 if you want to clear the screen to magenta before
 ;drawing layer 0 (the default background). Good for spotting \"holes\"
@@ -202,12 +202,12 @@ spr = tailbass.sff
 ;Remember to turn this off when you are done debugging the background,
 ;because it slows down performance.
 debugbg = 0
-[BG tailbass]
+[BG lobbytwo]
 type = Anim
 actionno = 0
-start = -18, -200
+start = -24, -238
 
-; tailbass
+; lobbytwo
 [Begin Action 0]
 0,0, 0,0, 3
 0,1, 0,0, 3
@@ -327,3 +327,85 @@ start = -18, -200
 0,115, 0,0, 3
 0,116, 0,0, 3
 0,117, 0,0, 3
+0,118, 0,0, 3
+0,119, 0,0, 3
+0,120, 0,0, 3
+0,121, 0,0, 3
+0,122, 0,0, 3
+0,123, 0,0, 3
+0,124, 0,0, 3
+0,125, 0,0, 3
+0,126, 0,0, 3
+0,127, 0,0, 3
+0,128, 0,0, 3
+0,129, 0,0, 3
+0,130, 0,0, 3
+0,131, 0,0, 3
+0,132, 0,0, 3
+0,133, 0,0, 3
+0,134, 0,0, 3
+0,135, 0,0, 3
+0,136, 0,0, 3
+0,137, 0,0, 3
+0,138, 0,0, 3
+0,139, 0,0, 3
+0,140, 0,0, 3
+0,141, 0,0, 3
+0,142, 0,0, 3
+0,143, 0,0, 3
+0,144, 0,0, 3
+0,145, 0,0, 3
+0,146, 0,0, 3
+0,147, 0,0, 3
+0,148, 0,0, 3
+0,149, 0,0, 3
+0,150, 0,0, 3
+0,151, 0,0, 3
+0,152, 0,0, 3
+0,153, 0,0, 3
+0,154, 0,0, 3
+0,155, 0,0, 3
+0,156, 0,0, 3
+0,157, 0,0, 3
+0,158, 0,0, 3
+0,159, 0,0, 3
+0,160, 0,0, 3
+0,161, 0,0, 3
+0,162, 0,0, 3
+0,163, 0,0, 3
+0,164, 0,0, 3
+0,165, 0,0, 3
+0,166, 0,0, 3
+0,167, 0,0, 3
+0,168, 0,0, 3
+0,169, 0,0, 3
+0,170, 0,0, 3
+0,171, 0,0, 3
+0,172, 0,0, 3
+0,173, 0,0, 3
+0,174, 0,0, 3
+0,175, 0,0, 3
+0,176, 0,0, 3
+0,177, 0,0, 3
+0,178, 0,0, 3
+0,179, 0,0, 3
+0,180, 0,0, 3
+0,181, 0,0, 3
+0,182, 0,0, 3
+0,183, 0,0, 3
+0,184, 0,0, 3
+0,185, 0,0, 3
+0,186, 0,0, 3
+0,187, 0,0, 3
+0,188, 0,0, 3
+0,189, 0,0, 3
+0,190, 0,0, 3
+0,191, 0,0, 3
+0,192, 0,0, 3
+0,193, 0,0, 3
+0,194, 0,0, 3
+0,195, 0,0, 3
+0,196, 0,0, 3
+0,197, 0,0, 3
+0,198, 0,0, 3
+0,199, 0,0, 3
