@@ -82,9 +82,7 @@ stages/ultraplex_hub.def
 stages/ultra_lobby_a.def
 stages/bird_meet.def
 stages/club_orion.def
-stages/fireworks.def
 stages/poes_nightclub.def
-stages/resync.def
 stages/s4.def
 stages/stage0.def
 stages/tailbass.def
@@ -92,7 +90,9 @@ stages/ultra_club.def
 stages/ultra_club_b.def
 
 ; Animated Stages
-stages/ultra_daxan_anim.def
+stages/resync.def
+stages/fireworks.def
+stages/daxan.def
 
 ;---------------------------------------------------------------------
 [Options]

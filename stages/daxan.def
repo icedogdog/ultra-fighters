@@ -5,11 +5,11 @@
 
 ;--------------------------------------------------------
 [Info]
-name         = "Ultra Daxan Set"	; Name of the stage.
-displayname  = "Ultra Daxan Set"	; Name to display
+name         = "Ultra Club 1"	; Name of the stage.
+displayname  = "Ultra Club - Daxan"	; Name to display
 versiondate  = 1.0		; Version date of stage (MM,DD,YYYY or X.XX)
 mugenversion = 1.0 		; Version of MUGENext stage works on (X.XX)
-author       = "Icedog, Johari"	; Stage author name
+author       = "Johari"	; Stage author name
 
 ;--------------------------------------------------------
 [Camera]
@@ -148,7 +148,7 @@ fade.range = -400,-100
 [Reflection]
 ;Intensity of reflection (from 0 to 256). Set to 0 to have no
 ;reflection. Defaults to 0.
-intensity = 64
+intensity = 128
 
 ;--------------------------------------------------------
 [Music]
@@ -190,12 +190,11 @@ bgmvolume = 100
 ; yscaledelta = ?  Change in y-scale per unit (float, in percent)  (def: 0)
 ;-------------------------------------
 
-
 ;-------------------------------------
 ; Main background definition
 [BGdef]
 ;Filename of sprite data
-spr = ultra_daxan_anim.sff
+spr = daxan.sff
 
 ;Set to 1 if you want to clear the screen to magenta before
 ;drawing layer 0 (the default background). Good for spotting \"holes\"
@@ -203,13 +202,12 @@ spr = ultra_daxan_anim.sff
 ;Remember to turn this off when you are done debugging the background,
 ;because it slows down performance.
 debugbg = 0
-[BG daxanbg]
+[BG stage]
 type = Anim
 actionno = 0
-tile = 0, -1
-start = 8, -244
+start = 22, -220
 
-; stgbg
+; stage
 [Begin Action 0]
 0,0, 0,0, 4
 0,1, 0,0, 4
